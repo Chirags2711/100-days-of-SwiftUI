@@ -11,6 +11,12 @@
 		E80829DB2B3FE6ED007DEB35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80829DA2B3FE6ED007DEB35 /* ContentView.swift */; };
 		E80829DD2B3FE6EF007DEB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80829DC2B3FE6EF007DEB35 /* Assets.xcassets */; };
 		E80829E02B3FE6EF007DEB35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80829DF2B3FE6EF007DEB35 /* Preview Assets.xcassets */; };
+		E8B3F4452B4AA0E90051F83D /* Colors and frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F4442B4AA0E90051F83D /* Colors and frames.swift */; };
+		E8B3F4472B4BF2DE0051F83D /* Colors and frames 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F4462B4BF2DE0051F83D /* Colors and frames 2.swift */; };
+		E8B3F4492B4BF54E0051F83D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F4482B4BF54E0051F83D /* Gradients.swift */; };
+		E8B3F44B2B4D5B450051F83D /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F44A2B4D5B450051F83D /* Buttons.swift */; };
+		E8B3F44D2B4D611B0051F83D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F44C2B4D611B0051F83D /* Images.swift */; };
+		E8B3F44F2B4D67F40051F83D /* Showing alert messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F44E2B4D67F40051F83D /* Showing alert messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		E80829DA2B3FE6ED007DEB35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E80829DC2B3FE6EF007DEB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80829DF2B3FE6EF007DEB35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8B3F4442B4AA0E90051F83D /* Colors and frames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors and frames.swift"; sourceTree = "<group>"; };
+		E8B3F4462B4BF2DE0051F83D /* Colors and frames 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors and frames 2.swift"; sourceTree = "<group>"; };
+		E8B3F4482B4BF54E0051F83D /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		E8B3F44A2B4D5B450051F83D /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		E8B3F44C2B4D611B0051F83D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		E8B3F44E2B4D67F40051F83D /* Showing alert messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Showing alert messages.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				E80829D82B3FE6ED007DEB35 /* LearningsApp.swift */,
 				E80829DA2B3FE6ED007DEB35 /* ContentView.swift */,
+				E8B3F4442B4AA0E90051F83D /* Colors and frames.swift */,
+				E8B3F4462B4BF2DE0051F83D /* Colors and frames 2.swift */,
+				E8B3F4482B4BF54E0051F83D /* Gradients.swift */,
+				E8B3F44A2B4D5B450051F83D /* Buttons.swift */,
+				E8B3F44C2B4D611B0051F83D /* Images.swift */,
+				E8B3F44E2B4D67F40051F83D /* Showing alert messages.swift */,
 				E80829DC2B3FE6EF007DEB35 /* Assets.xcassets */,
 				E80829DE2B3FE6EF007DEB35 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B3F44D2B4D611B0051F83D /* Images.swift in Sources */,
+				E8B3F4452B4AA0E90051F83D /* Colors and frames.swift in Sources */,
+				E8B3F4492B4BF54E0051F83D /* Gradients.swift in Sources */,
+				E8B3F4472B4BF2DE0051F83D /* Colors and frames 2.swift in Sources */,
 				E80829DB2B3FE6ED007DEB35 /* ContentView.swift in Sources */,
 				E80829D92B3FE6ED007DEB35 /* LearningsApp.swift in Sources */,
+				E8B3F44F2B4D67F40051F83D /* Showing alert messages.swift in Sources */,
+				E8B3F44B2B4D5B450051F83D /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
