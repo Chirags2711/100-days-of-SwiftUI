@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+//Challenge, Project 3
+struct FlagImage: View {
+    let image: Image
+    var body: some View {
+        image
+            .clipShape(.capsule)
+            .shadow(radius: 5)
+    }
+}
 struct ContentView: View {
     @State var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
     @State var correntAnswer = Int.random(in: 0...2)
@@ -49,10 +58,13 @@ struct ContentView: View {
                             // flag was tapped
                             flagTapped(number)
                         } label: {
-                            Image(countries[number])
-                                .clipShape(.capsule)
-                            //capsule: it ensures the corners of the shortest edges are fully rounded, while the longest edges remain straight
-                                .shadow(radius: 5)
+//                            Image(countries[number])
+//                                .clipShape(.capsule)
+//                            //capsule: it ensures the corners of the shortest edges are fully rounded, while the longest edges remain straight
+//                                .shadow(radius: 5)
+                            
+                            //Challenge Project 3
+                            FlagImage(image: Image(countries[number]))
                         }
                     }
                 }
@@ -90,6 +102,7 @@ struct ContentView: View {
             Text("Your final score is \(score)")
         }
     }
+    
     
     func flagTapped(_ number: Int) {
         if number == correntAnswer {

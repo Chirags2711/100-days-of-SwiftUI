@@ -17,6 +17,7 @@
 		E8743A952B4F134300F7FF08 /* View Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8743A942B4F134300F7FF08 /* View Composition.swift */; };
 		E8743A972B5067A300F7FF08 /* Custom Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8743A962B5067A300F7FF08 /* Custom Modifiers.swift */; };
 		E8743A992B506B8800F7FF08 /* Custom Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8743A982B506B8800F7FF08 /* Custom Containers.swift */; };
+		E88CE9182B52C801002E8BF1 /* Challenge 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88CE9172B52C801002E8BF1 /* Challenge 3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E8743A942B4F134300F7FF08 /* View Composition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Composition.swift"; sourceTree = "<group>"; };
 		E8743A962B5067A300F7FF08 /* Custom Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Modifiers.swift"; sourceTree = "<group>"; };
 		E8743A982B506B8800F7FF08 /* Custom Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Containers.swift"; sourceTree = "<group>"; };
+		E88CE9172B52C801002E8BF1 /* Challenge 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge 3.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E8743A942B4F134300F7FF08 /* View Composition.swift */,
 				E8743A962B5067A300F7FF08 /* Custom Modifiers.swift */,
 				E8743A982B506B8800F7FF08 /* Custom Containers.swift */,
+				E88CE9172B52C801002E8BF1 /* Challenge 3.swift */,
 				E8743A842B4EC57600F7FF08 /* Assets.xcassets */,
 				E8743A862B4EC57600F7FF08 /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				E8743A972B5067A300F7FF08 /* Custom Modifiers.swift in Sources */,
 				E8743A832B4EC57400F7FF08 /* ContentView.swift in Sources */,
+				E88CE9182B52C801002E8BF1 /* Challenge 3.swift in Sources */,
 				E8743A912B4F0AAD00F7FF08 /* Environment Modifiers.swift in Sources */,
 				E8743A992B506B8800F7FF08 /* Custom Containers.swift in Sources */,
 				E8743A812B4EC57400F7FF08 /* ViewsAndModifiersApp.swift in Sources */,
