@@ -16,27 +16,73 @@ struct ContentView: View {
     @State private var score = 0
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var numOfGames = 0
+    @State private var showingFinalScore = false
         
     var body: some View {
         ZStack{
-            VStack {
-                Text("Score: \(score)")
-                Text("App's Move: \(String(describing: appMove!))")
-                Text("Your Task: \(shouldWin ? "Win" : "Lose")")
+            
+            AngularGradient(colors: [.red, .yellow, .green, .blue, .purple, .red], center: .center)
+                .ignoresSafeArea()
+            
+            VStack{
+                Spacer()
+                Text("Rock, Paper and Scissors \(numOfGames+1) / 5")
+                    .font(.largeTitle.bold())
+                    .foregroundStyle(.white)
                 
-                ForEach(Moves.allCases, id: \.self){ move in
-                    Button(String(describing: move)){
-                        playerChose(move)
+                VStack(spacing: 15) {
+                    
+                    VStack{
+                        Text("App's Move: \(String(describing: appMove!))")
+                            .font(.title.bold())
+                            .foregroundStyle(.black)
+                        Text("Your Task: \(shouldWin ? "Win" : "Lose")")
+                            .font(.title2.bold())
+                            .foregroundStyle(shouldWin ? .green : .red)
+                    }
+                    
+                    ForEach(Moves.allCases, id: \.self){ move in
+                        Button(String(describing: move)){
+                            playerChose(move)
+                        }
+                        .foregroundStyle(.secondary)
+                        .font(.title.bold())
                     }
                 }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 20)
+                .background(.regularMaterial)
+                .clipShape(.rect(cornerRadius: 20))
                 
+                Spacer()
+                Spacer()
+                Text("Score: \(score)")
+                    .foregroundStyle(.purple)
+                    .font(.title.bold())
+                Spacer()
             }
             .padding()
+            
         }
         .alert(scoreTitle, isPresented: $showingScore){
             Button("Continue"){
-                nextRound()
+                numOfGames += 1
+                if numOfGames >= 5 {
+                    showingFinalScore = true
+                }else{
+                    nextRound()
+                }
             }
+        } message: {
+            Text("Your score is: \(score)")
+        }
+        .alert("Game Over", isPresented: $showingFinalScore){
+            Button("Reset"){
+                reset()
+            }
+        } message: {
+            Text("Your final score is: \(score)")
         }
     }
     
@@ -68,6 +114,12 @@ struct ContentView: View {
     func nextRound(){
         appMove = Moves.allCases.randomElement()
         shouldWin = Bool.random()
+    }
+    
+    func reset(){
+        numOfGames = 0
+        score = 0
+        nextRound()
     }
 }
 
