@@ -11,6 +11,8 @@ print(peachOpposite)
 //IF-LET
 if let marioOpposite = opposites["Mario"] {
     print("Mario's opposite is \(marioOpposite)")
+}else {
+    print("Not found")
 }
 if let pO = peachOpposite { //Nothing happens if value does not exist
     print("Mario's opposite is \(pO)")
